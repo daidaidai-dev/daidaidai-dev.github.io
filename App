@@ -58,13 +58,13 @@
     <h1>アプリ紹介ページ</h1>
     <div class="app">
       <div>
-        <img src="1893A9D0-E341-485C-94E1-B63AB5A1F984.png" alt="bmiplus">
+        <img src="bmiplus-icon.png" alt="bmiplus">
         <h2>bmiplus</h2>
         <p>健康管理をサポートするアプリです。</p>
         <a href="bmiplus.html">詳細を見る</a>
       </div>
       <div>
-        <img src="Green and Orange Minimal Camera Icon Photography Studio Logo-4.jpg" alt="todo">
+        <img src="todo-icon.jpg" alt="todo">
         <h2>Todo アプリ</h2>
         <p>タスク管理を簡単に行えるアプリです。</p>
         <a href="todo.html">詳細を見る</a>

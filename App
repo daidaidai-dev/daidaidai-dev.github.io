@@ -63,13 +63,13 @@
         <img src="bmiplus-icon.png" alt="bmiplus">
         <h2>bmiplus</h2>
         <p>健康管理をサポートするアプリです。</p>
-        <a href="bmiplus">詳細を見る</a>
+        <a href="bmiplus.html">詳細を見る</a>
       </div>
       <div>
         <img src="todo-icon.jpg" alt="todo">
         <h2>Todo アプリ</h2>
         <p>タスク管理を簡単に行えるアプリです。</p>
-        <a href="todo">詳細を見る</a>
+        <a href="todo.html">詳細を見る</a>
       </div>
     </div>
   </div>

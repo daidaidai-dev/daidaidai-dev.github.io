@@ -1,48 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>bmiplus アプリ詳細</title>
+  <meta charset="utf-8">
+  <title>BMIPLUS - かんたんBMI/理想体重/カロリー計算</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BMIPLUSは、BMI・理想体重・1日の必要カロリー・たんぱく質の目安をすぐに計算できる健康サポートアプリです。">
+  <!-- iOSのスマートAppバナー -->
+  <meta name="apple-itunes-app" content="app-id=6748558249">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-    .container {
-      width: 80%;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #333;
-    }
-    p {
-      line-height: 1.6;
-      color: #555;
-    }
-    a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    a:hover {
-      background-color: #0056b3;
-    }
+    body { font-family: -apple-system, system-ui, sans-serif; margin: 24px; line-height: 1.7; }
+    .wrap { max-width: 860px; margin: 0 auto; }
+    h1 { margin-bottom: .2em; }
+    .badges a{ display:inline-block; padding:.8em 1.2em; border:1px solid #ccc; border-radius:10px; text-decoration:none; }
+    .grid{ display:grid; gap:16px; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); margin: 24px 0; }
+    .card{ border:1px solid #eee; border-radius:14px; padding:16px; background:#fafafa; }
+    footer{ color:#666; margin-top:40px; font-size:14px; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>bmiplus アプリ詳細</h1>
-    <p>ここに bmiplus アプリの詳細情報を記載します。</p>
-    <a href="https://github.com/daidaidai-dev/bmiplus">GitHub リポジトリを見る</a>
+  <div class="wrap">
+    <h1>BMIPLUS</h1>
+    <p>かんたん操作で <b>BMI</b>・<b>理想体重</b>・<b>一日の必要カロリー</b>・<b>たんぱく質量</b> をサクッと計算。</p>
+    <div class="badges">
+      <a href="https://apps.apple.com/app/bmiplus/id6748558249" target="_blank" rel="noopener">App Storeで見る</a>
+    </div>
+
+    <div class="grid">
+      <div class="card"><b>BMI計算</b><br>数値入力だけで即計算。推移グラフにも対応。</div>
+      <div class="card"><b>理想体重</b><br>身長から標準体重の目安を算出。</div>
+      <div class="card"><b>必要カロリー</b><br>活動量に応じた一日必要エネルギーを計算。</div>
+      <div class="card"><b>たんぱく質</b><br>体重に応じた摂取目安を提案。</div>
+    </div>
+
+   
+    <p><a href="https://pie-petunia-30d.notion.site/BMI-PLUS-2347172150ab800f893cc377e2bbcf1a?source=copy_link" target="_blank" rel="noopener">サポート / お問い合わせ</a></p>
+
+    <footer>© BMIPLUS</footer>
   </div>
 </body>
 </html>

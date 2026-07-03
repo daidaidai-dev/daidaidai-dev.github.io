@@ -35,11 +35,21 @@
       width: 45%;
       margin-bottom: 20px;
     }
-    .app img {
+    .app img,
+    .app .dropcalc-icon {
       width: 100px;
       height: 100px;
       object-fit: cover;
       border-radius: 50%;
+    }
+    .app .dropcalc-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(145deg, #12afbd, #f35f91);
+      color: #fff;
+      font-size: 48px;
+      line-height: 1;
     }
     .app a {
       display: inline-block;
@@ -70,6 +80,12 @@
         <h2>やるメモ</h2>
         <p>タスク管理を簡単に行えるアプリです。</p>
         <a href="todo.html">詳細を見る</a>
+      </div>
+      <div>
+        <span class="dropcalc-icon" aria-hidden="true">💧</span>
+        <h2>点滴滴下ナビ</h2>
+        <p>点滴の滴下数をすばやく確認できる計算補助アプリです。</p>
+        <a href="dropcalc/">詳細を見る</a>
       </div>
     </div>
   </div>

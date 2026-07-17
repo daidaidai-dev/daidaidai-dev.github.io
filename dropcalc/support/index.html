@@ -3,73 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>サポート | 点滴滴下ナビ</title>
-  <meta name="description" content="点滴滴下ナビのサポートページです。">
-  <style>
-    body {
-      margin: 0;
-      color: #122b34;
-      background: linear-gradient(145deg, #fff0f7, #e9fbff 48%, #fff7df);
-      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "YuGothic", "Segoe UI", sans-serif;
-      line-height: 1.75;
-    }
-
-    main {
-      width: min(840px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 44px 0 56px;
-    }
-
-    a {
-      color: #057686;
-      font-weight: 700;
-    }
-
-    .card {
-      padding: 24px;
-      border: 1px solid rgba(18, 43, 52, 0.14);
-      border-radius: 8px;
-      background: rgba(255, 255, 255, 0.82);
-      box-shadow: 0 12px 28px rgba(18, 43, 52, 0.08);
-    }
-
-    h1 {
-      margin: 0 0 14px;
-      font-size: clamp(32px, 6vw, 54px);
-      line-height: 1.1;
-      letter-spacing: 0;
-    }
-
-    h2 {
-      margin: 32px 0 10px;
-      font-size: 24px;
-      letter-spacing: 0;
-    }
-
-    ul {
-      padding-left: 1.25rem;
-    }
-
-    .back {
-      display: inline-block;
-      margin-bottom: 24px;
-      text-decoration: none;
-    }
-  </style>
+  <title>サポート・お問い合わせ｜点滴滴下ナビ</title>
+  <meta name="description" content="点滴滴下ナビのサポートページです。使い方のご質問、不具合のご報告、ご要望は専用フォームからお問い合わせいただけます。">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#07122e" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="../assets/app-icon.png" type="image/png">
+  <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
-  <main>
-    <a class="back" href="../index.html">← 点滴滴下ナビ</a>
-    <div class="card">
+<body class="support-page">
+  <main class="container support-main">
+    <a class="back-link" href="../">← 点滴滴下ナビに戻る</a>
+    <article class="support-card">
+      <img class="support-icon" src="../assets/app-icon.png" alt="" width="96" height="96">
       <h1>サポート</h1>
-      <p>
-        点滴滴下ナビに関するお問い合わせ、不具合報告、ご要望は以下の連絡先までお送りください。
-      </p>
+      <p class="support-lead">点滴滴下ナビに関する使い方のご質問、不具合のご報告、ご要望は、専用のGoogleフォームからお送りください。</p>
 
       <h2>お問い合わせ先</h2>
-      <p>
-        メール: <a href="mailto:your-email@example.com">your-email@example.com</a>
-      </p>
+      <p>フォームに必要事項をご入力ください。確認のうえ、入力いただいたメールアドレス宛にご連絡します。</p>
+      <a class="button button-primary support-button" href="https://docs.google.com/forms/d/e/1FAIpQLSewpm7ABe0ODUuDzHi62jxibjjYJhxhG1HW9jtA1NK2FKbhjA/viewform" target="_blank" rel="noopener noreferrer">サポートフォームを開く</a>
 
       <h2>不具合報告に含めてほしい内容</h2>
       <ul>
@@ -94,7 +45,7 @@
       <p>
         <a href="../privacy/">プライバシーポリシー</a>
       </p>
-    </div>
+    </article>
   </main>
 </body>
 </html>

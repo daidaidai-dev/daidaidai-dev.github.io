@@ -3,74 +3,127 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ねむもこ｜睡眠と体調管理 サポート</title>
-  <meta name="description" content="ねむもこ｜睡眠と体調管理のサポートページです。お問い合わせ方法、よくある質問、プライバシーポリシーへのリンクを掲載しています。">
+  <meta name="color-scheme" content="light dark">
+  <title>サポート・お問い合わせ｜ねむもこ｜睡眠と体調管理</title>
+  <meta name="description" content="ねむもこ｜睡眠と体調管理のサポートページです。使い方、不具合、機能要望に関するお問い合わせ方法とよくある質問を掲載しています。">
+  <link rel="canonical" href="https://daidaidai-dev.github.io/sleep/support/">
+  <link rel="icon" type="image/png" href="../assets/brand/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/brand/apple-touch-icon.png">
   <link rel="stylesheet" href="../styles.css">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="ねむもこ｜睡眠と体調管理">
+  <meta property="og:title" content="サポート・お問い合わせ｜ねむもこ">
+  <meta property="og:description" content="使い方、不具合、機能要望についてお問い合わせいただけます。">
+  <meta property="og:url" content="https://daidaidai-dev.github.io/sleep/support/">
+  <meta property="og:image" content="https://daidaidai-dev.github.io/sleep/assets/brand/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <script src="../site.js" defer></script>
 </head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="../" aria-label="ねむもこ｜睡眠と体調管理 ホーム">
-      <span class="brand-mark">🌙</span>
-      <span>ねむもこ｜睡眠と体調管理</span>
-    </a>
-    <nav class="site-nav" aria-label="主要ページ">
-      <a aria-current="page" href="./">サポート</a>
-      <a href="../privacy/">プライバシー</a>
-    </nav>
+<body class="page-body">
+  <a class="skip-link" href="#main">本文へ移動</a>
+
+  <header class="marketing-header">
+    <div class="wrap">
+      <nav class="marketing-nav" aria-label="メインナビゲーション">
+        <a class="brand" href="../" aria-label="ねむもこ｜睡眠と体調管理 ホーム">
+          <img class="brand-icon" src="../assets/brand/app-icon.webp" alt="" width="256" height="256">
+          <span>ねむもこ<span class="brand-divider">｜</span><span class="brand-subname">睡眠と体調管理</span></span>
+        </a>
+        <button class="nav-toggle icon-button" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="メニューを開く">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+        <div class="site-nav" id="site-nav">
+          <a href="../">ホーム</a>
+          <a href="../#screenshots">画面紹介</a>
+          <a href="../privacy/">プライバシー</a>
+          <button class="theme-toggle icon-button" type="button" aria-label="表示テーマを切り替える">
+            <span class="theme-icon" aria-hidden="true">☾</span>
+          </button>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <main class="page">
-    <section class="page-header">
-      <h1>ねむもこ｜睡眠と体調管理 サポート</h1>
-      <p>アプリの不具合、使い方、機能要望についてはこちらからお問い合わせください。</p>
-    </section>
+  <main class="subpage-main" id="main">
+    <div class="wrap">
+      <header class="subpage-hero">
+        <img class="subpage-mascot" src="../assets/brand/nemumoko-bedtime.webp" alt="" width="520" height="520">
+        <p class="section-kicker">SUPPORT</p>
+        <h1>サポート・お問い合わせ</h1>
+        <p>アプリの使い方、不具合、機能のご要望についてお困りのときは、こちらからご連絡ください。</p>
+      </header>
 
-    <section class="support-panel">
-      <h2>サポートフォーム</h2>
-      <p>
-        不具合、使い方、機能要望はGoogleフォームから送信してください。
-      </p>
-      <a class="button primary" href="https://docs.google.com/forms/d/e/1FAIpQLScyP8eN59fo-did71U8-Ackaa5mt35HS60rbxuaTmxAsSoSeA/viewform">サポートフォームを開く</a>
-    </section>
+      <section class="content-panel support-cta" aria-labelledby="contact-title">
+        <h2 id="contact-title">サポートフォーム</h2>
+        <p>
+          お問い合わせ内容を確認しやすくするため、Googleフォームをご用意しています。
+          不具合の場合は、発生した画面、操作手順、利用している端末を分かる範囲でお知らせください。
+          睡眠・体調・服薬などの詳しい記録内容を送る必要はありません。
+        </p>
+        <a
+          class="button button-primary"
+          href="https://docs.google.com/forms/d/e/1FAIpQLScyP8eN59fo-did71U8-Ackaa5mt35HS60rbxuaTmxAsSoSeA/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+        >サポートフォームを開く <span aria-hidden="true">↗</span></a>
+      </section>
 
-    <section class="section">
-      <div class="section-heading">
-        <h2>よくある質問</h2>
-      </div>
-      <div class="faq-list">
-        <article>
-          <h3>記録はどこに保存されますか？</h3>
-          <p>睡眠記録、薬剤名、通知設定、表示設定はこの端末内に保存されます。</p>
-        </article>
-        <article>
-          <h3>睡眠記録は外部サーバーへ送信されますか？</h3>
-          <p>本アプリ独自のサーバーへ睡眠記録を送信しません。広告配信と祝日表示に伴う外部通信については、プライバシーポリシーをご確認ください。</p>
-        </article>
-        <article>
-          <h3>記録を削除できますか？</h3>
-          <p>アプリ内のデータ管理画面から、保存済みデータを削除できます。</p>
-        </article>
-        <article>
-          <h3>通知を変更できますか？</h3>
-          <p>アプリ内の通知設定、またはiOSの通知設定から変更できます。</p>
-        </article>
-      </div>
-    </section>
+      <section class="content-panel" aria-labelledby="faq-title">
+        <h2 id="faq-title">よくある質問</h2>
+        <div class="faq-list-subpage">
+          <article>
+            <h3>記録はどこに保存されますか？</h3>
+            <p>睡眠・体調・生活習慣・服薬・メモの記録、通知設定、表示設定はこの端末内に保存されます。</p>
+          </article>
+          <article>
+            <h3>睡眠や体調の記録は外部サーバーへ送信されますか？</h3>
+            <p>ねむもこ独自のサーバーへ記録内容を送信しません。広告配信と祝日表示に伴う通信については、プライバシーポリシーをご確認ください。</p>
+          </article>
+          <article>
+            <h3>記録する項目を減らせますか？</h3>
+            <p>設定画面の「入力する項目を選択」から変更できます。基本セットと詳細セットを選んだあと、項目ごとにON・OFFを調整できます。</p>
+          </article>
+          <article>
+            <h3>カレンダーやリストの表示を変更できますか？</h3>
+            <p>設定画面から、カレンダー下やリストに表示する項目を選べます。記録項目とは別に、自分が見返したい内容だけを表示できます。</p>
+          </article>
+          <article>
+            <h3>保存した記録を削除できますか？</h3>
+            <p>個別の記録は入力画面から削除できます。すべての記録は、設定内のデータ管理画面から削除できます。</p>
+          </article>
+          <article>
+            <h3>通知を変更できますか？</h3>
+            <p>アプリ内の通知設定、またはiPhone・iPadの設定アプリにある通知設定から変更できます。</p>
+          </article>
+          <article>
+            <h3>医療機関へ相談すべき内容はありますか？</h3>
+            <p>ねむもこは診断や治療を行いません。睡眠や体調について強い不安がある場合、症状が続く場合、服薬について判断が必要な場合は、医師・薬剤師などの医療専門職へご相談ください。</p>
+          </article>
+        </div>
+      </section>
 
-    <section class="section split">
-      <div>
-        <h2>プライバシーについて</h2>
-        <p>保存データ、広告、同意設定についてはプライバシーポリシーをご確認ください。</p>
-      </div>
-      <a class="text-link" href="../privacy/">プライバシーポリシーを見る</a>
-    </section>
+      <section class="content-panel" aria-labelledby="privacy-link-title">
+        <h2 id="privacy-link-title">プライバシーについて</h2>
+        <p>保存されるデータ、広告、祝日情報の取得、同意設定、データ削除については、プライバシーポリシーで説明しています。</p>
+        <a class="text-link" href="../privacy/">プライバシーポリシーを見る <span aria-hidden="true">→</span></a>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2026 ねむもこ｜睡眠と体調管理</p>
-    <div>
-      <a href="../">ホーム</a>
-      <a href="../privacy/">プライバシー</a>
+    <div class="wrap footer-layout">
+      <div>
+        <a class="brand footer-brand" href="../">
+          <img class="brand-icon" src="../assets/brand/app-icon.webp" alt="" width="256" height="256" loading="lazy">
+          <span>ねむもこ｜睡眠と体調管理</span>
+        </a>
+      </div>
+      <nav aria-label="フッターナビゲーション">
+        <a href="../">ホーム</a>
+        <a href="../privacy/">プライバシー</a>
+      </nav>
+      <p class="copyright">&copy; 2026 ねむもこ. All rights reserved.</p>
     </div>
   </footer>
 </body>

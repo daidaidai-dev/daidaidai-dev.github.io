@@ -4,18 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>点滴滴下ナビ｜看護師向け点滴滴下計算アプリ</title>
-  <meta name="description" content="点滴滴下ナビは、輸液量・投与時間・滴下係数から、1分あたりの滴下数、流量、1滴の間隔をまとめて確認できる看護師・医療職向け計算補助アプリです。">
+  <meta name="description" content="点滴滴下ナビは、滴下数・流量・1滴の間隔をまとめて確認し、計算した投与時間や任意時間から点滴タイマーを設定できる看護師・医療職向け計算補助アプリです。">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#07122e" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://daidaidai-dev.github.io/dropcalc/">
   <link rel="icon" href="assets/app-icon.png" type="image/png">
   <link rel="preload" href="assets/app-screen.jpg" as="image" fetchpriority="high">
+  <link rel="preload" href="assets/timer-screen.png" as="image">
   <link rel="stylesheet" href="styles.css">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:title" content="点滴滴下ナビ｜点滴計算を、迷わずすばやく。">
-  <meta property="og:description" content="滴下数・流量・1滴の間隔をまとめて確認。看護師・医療職のための点滴計算補助アプリです。">
+  <meta property="og:description" content="滴下数・流量・1滴の間隔をまとめて確認し、点滴タイマーで終了予定も管理できる看護師・医療職向け計算補助アプリです。">
   <meta property="og:url" content="https://daidaidai-dev.github.io/dropcalc/">
   <meta property="og:image" content="https://daidaidai-dev.github.io/dropcalc/assets/app-icon.png">
   <meta name="twitter:card" content="summary">
@@ -27,7 +28,7 @@
     "name": "点滴滴下ナビ",
     "applicationCategory": "MedicalApplication",
     "operatingSystem": "iOS, iPadOS, watchOS",
-    "description": "輸液量・投与時間・滴下係数から、滴下数、流量、1滴の間隔を確認できる計算補助アプリです。",
+    "description": "輸液量・投与時間・滴下係数から滴下数、流量、1滴の間隔を確認し、点滴タイマーで終了予定を管理できる計算補助アプリです。",
     "url": "https://daidaidai-dev.github.io/dropcalc/",
     "downloadUrl": "https://apps.apple.com/app/id6780919575"
   }
@@ -52,6 +53,7 @@
 
       <nav class="site-nav" id="site-navigation" aria-label="メインナビゲーション" data-navigation>
         <a href="#features">特徴</a>
+        <a href="#timer">点滴タイマー</a>
         <a href="#how-to-use">使い方</a>
         <a href="#contact">お問い合わせ</a>
         <a class="nav-cta" href="https://apps.apple.com/app/id6780919575" target="_blank" rel="noopener noreferrer">App Store</a>
@@ -64,8 +66,9 @@
       <div class="hero-glow" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-copy reveal is-visible">
-          <h1 id="hero-title">点滴計算を、<br>迷わずすばやく。</h1>
-          <p class="hero-lead">輸液量・投与時間・滴下係数から、<br class="desktop-break">滴下数・流量・1滴の間隔をまとめて確認。<br class="desktop-break">看護師・医療職のための計算補助アプリです。</p>
+          <p class="hero-new"><span>NEW</span> 点滴タイマーを追加</p>
+          <h1 id="hero-title">点滴計算から、<br>終了予定の確認まで。</h1>
+          <p class="hero-lead">輸液量・投与時間・滴下係数から、<br class="desktop-break">滴下数・流量・1滴の間隔をまとめて確認。<br class="desktop-break">計算した投与時間から点滴タイマーも設定できます。</p>
 
           <div class="hero-actions">
             <a class="button button-primary" href="https://apps.apple.com/app/id6780919575" target="_blank" rel="noopener noreferrer">
@@ -79,12 +82,13 @@
             </a>
           </div>
 
-          <div class="device-support" aria-label="iPhone、iPad、Apple Watch対応">
-            <svg viewBox="0 0 74 28" aria-hidden="true"><rect x="1" y="3" width="14" height="23" rx="3"/><rect x="23" y="1" width="23" height="25" rx="3"/><rect x="56" y="5" width="15" height="18" rx="5"/><path d="M60 5V2m7 3V2m-7 21v3m7-3v3"/></svg>
-            <span>iPhone・iPad・Apple Watch対応</span>
+          <div class="hero-meta">
+            <div class="device-support" aria-label="iPhone、iPad、Apple Watch対応">
+              <svg viewBox="0 0 74 28" aria-hidden="true"><rect x="1" y="3" width="14" height="23" rx="3"/><rect x="23" y="1" width="23" height="25" rx="3"/><rect x="56" y="5" width="15" height="18" rx="5"/><path d="M60 5V2m7 3V2m-7 21v3m7-3v3"/></svg>
+              <span>iPhone・iPad・Apple Watch対応</span>
+            </div>
+            <img class="hero-mascot" src="assets/drop-mascot.png" alt="笑顔のしずくのキャラクター" width="140" height="210">
           </div>
-
-          <img class="hero-mascot" src="assets/drop-mascot.png" alt="笑顔のしずくのキャラクター" width="140" height="210">
         </div>
 
         <div class="hero-media reveal is-visible" aria-label="点滴滴下ナビのアプリ画面">
@@ -146,7 +150,79 @@
           <div class="feature-window">
             <img src="assets/app-screen.jpg" alt="滴下数33滴/分、流量100mL/時、約1.8秒に1滴と表示された計算結果画面" width="760" height="1651" loading="lazy">
           </div>
-          <img class="roller-character" src="assets/roller-guide.png" alt="輸液ローラーのキャラクター" width="240" height="240" loading="lazy">
+          <img class="roller-character" src="assets/roller-feature.png" alt="輸液ローラーのキャラクター" width="240" height="240" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="guide-feature section" id="guides" aria-labelledby="guides-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">確認サポート</p>
+          <h2 id="guides-title">リズムは目で、<br class="mobile-break">計算結果は声で。</h2>
+          <p>数字だけではつかみにくい滴下の間隔も、画面の動きと音声で確認できます。</p>
+        </div>
+
+        <div class="guide-grid">
+          <article class="guide-card reveal">
+            <div class="guide-media">
+              <img src="assets/rhythm-guide.jpg" alt="滴下リズムを目でチェックできるアプリ画面" width="760" height="1651" loading="lazy">
+            </div>
+            <div class="guide-copy">
+              <span class="guide-badge rhythm-badge">滴下リズム</span>
+              <h3>1滴の間隔を動きで確認</h3>
+              <p>計算した「何秒に1滴」の間隔に合わせて、しずくが動きます。再スタートして繰り返し確認できます。</p>
+            </div>
+          </article>
+
+          <article class="guide-card reveal">
+            <div class="guide-media">
+              <img src="assets/voice-guide.jpg" alt="計算結果を音声で知らせる音声ガイドのアプリ画面" width="760" height="1651" loading="lazy">
+            </div>
+            <div class="guide-copy">
+              <span class="guide-badge voice-badge">音声ガイド</span>
+              <h3>計算結果を音声で確認</h3>
+              <p>滴下数、流量、1滴の間隔、終了予定時刻などを音声で読み上げます。聞き直したいときは、もう一度再生できます。</p>
+            </div>
+          </article>
+        </div>
+
+        <p class="guide-note reveal">滴下リズムと音声ガイドは確認を補助する機能です。実際の投与では、施設の手順や輸液セットの規格を必ず確認してください。</p>
+      </div>
+    </section>
+
+    <section class="timer-feature section" id="timer" aria-labelledby="timer-title">
+      <div class="container timer-grid">
+        <div class="timer-visual reveal">
+          <div class="timer-window">
+            <img src="assets/timer-screen.png" alt="2件の点滴タイマーの残り時間、終了予定、変更と解除を表示した画面" width="1196" height="1420" loading="lazy">
+          </div>
+        </div>
+
+        <div class="timer-copy reveal">
+          <div class="timer-heading-row">
+            <p class="section-label">点滴タイマー</p>
+            <span class="timer-device-badge">iPhone</span>
+          </div>
+          <h2 id="timer-title">終了予定を、<br>まとめて確認。</h2>
+          <p class="section-description">計算した投与時間、または任意の時間からタイマーを追加できます。複数の点滴をひとつの画面で見分けやすく管理できます。</p>
+
+          <ul class="timer-list">
+            <li>
+              <span class="timer-list-icon" aria-hidden="true">10</span>
+              <div><h3>最大10件まで登録</h3><p>短い識別名、残り時間、終了予定を一覧で確認できます。</p></div>
+            </li>
+            <li>
+              <span class="timer-list-icon" aria-hidden="true">時</span>
+              <div><h3>計算時間・任意時間から設定</h3><p>入力した投与時間を使う方法と、その場で時間を指定する方法を選べます。</p></div>
+            </li>
+            <li>
+              <span class="timer-list-icon" aria-hidden="true">♪</span>
+              <div><h3>終了時のお知らせ方法を選択</h3><p>音とバイブ、通常の通知音、キャラクターから選べます。音とバイブは対応OSと許可設定が必要です。</p></div>
+            </li>
+          </ul>
+
+          <p class="timer-note"><strong>ご注意：</strong>点滴タイマーはiPhoneで利用できます。通知は端末設定や集中モードなどの影響を受ける場合があります。終了予定は画面でも確認してください。</p>
         </div>
       </div>
     </section>
@@ -216,6 +292,8 @@
       <a class="footer-brand" href="#top">点滴滴下ナビ</a>
       <nav aria-label="フッターナビゲーション">
         <a href="#features">特徴</a>
+        <a href="#timer">点滴タイマー</a>
+        <a href="#guides">リズム・音声</a>
         <a href="#how-to-use">使い方</a>
         <a href="support/">サポート</a>
         <a href="privacy/">プライバシー</a>

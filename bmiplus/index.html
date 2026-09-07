@@ -3,40 +3,206 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="BMIPLUSのプライバシーポリシー、利用規約、お問い合わせ先です。">
-  <title>BMIPLUS | サポート情報</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif; margin: 24px; line-height: 1.8; color: #1f2933; background: #f7fbfb; }
-    main { max-width: 760px; margin: 0 auto; }
-    .hero, .card { background: #fff; border: 1px solid #d7e8e6; border-radius: 16px; padding: 24px; margin: 16px 0; }
-    .hero { display: flex; align-items: center; gap: 20px; }
-    img { width: 72px; height: 72px; border-radius: 16px; }
-    h1, h2 { line-height: 1.35; margin: 0; }
-    a { color: #126b82; font-weight: 600; }
-    ul { padding-left: 1.2em; margin-bottom: 0; }
-    .note { color: #5f6b73; font-size: .9rem; }
-  </style>
+  <meta name="theme-color" content="#f7fbfa">
+  <meta name="description" content="BMIPLUSは、BMI・体重・食事・1週間の記録をひとつのホームで見渡せる、健康な成人向けの健康サポートアプリです。">
+  <meta name="apple-itunes-app" content="app-id=6748558249">
+  <meta property="og:title" content="BMIPLUS | からだも、食事も。続けられる形で。">
+  <meta property="og:description" content="体重・食事・1週間の記録を、びみまるとぱくまるがやさしく案内します。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://daidaidai-dev.github.io/bmiplus/">
+  <meta property="og:image" content="https://daidaidai-dev.github.io/bmiplus/assets/app-icon.png">
+  <link rel="canonical" href="https://daidaidai-dev.github.io/bmiplus/">
+  <link rel="icon" href="assets/app-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>BMIPLUS | BMI・体重・食事をひとつに</title>
 </head>
 <body>
-  <main>
-    <section class="hero">
-      <img src="../bmiplus-icon.png" alt="BMIPLUSアプリアイコン">
-      <div>
-        <h1>BMIPLUS</h1>
-        <p>サポート情報・法務ページ</p>
+  <a class="skip-link" href="#main">本文へ移動</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="BMIPLUS トップへ">
+        <img src="assets/app-icon.png" alt="" width="48" height="48">
+        <span>BMIPLUS</span>
+      </a>
+      <nav class="desktop-nav" aria-label="ページ内ナビゲーション">
+        <a href="#features">アプリの特長</a>
+        <a href="#flow">使い方の流れ</a>
+        <a href="#calculators">計算ツール</a>
+        <a href="#privacy">プライバシー</a>
+        <a href="https://pie-petunia-30d.notion.site/BMI-PLUS-2347172150ab800f893cc377e2bbcf1a" target="_blank" rel="noopener">サポート</a>
+      </nav>
+      <a class="button button-small" href="https://apps.apple.com/jp/app/bmiplus/id6748558249" target="_blank" rel="noopener">App Storeで見る</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1>からだも、食事も。<br>続けられる形で。</h1>
+          <p>びみまるとぱくまるが、<br>毎日の記録と振り返りをやさしく案内します。</p>
+          <a class="button button-large" href="https://apps.apple.com/jp/app/bmiplus/id6748558249" target="_blank" rel="noopener">App Storeで見る</a>
+        </div>
+
+        <div class="hero-product" aria-label="BMIPLUSのホーム画面と食事記録画面">
+          <figure class="phone-shot phone-shot-home">
+            <img src="assets/screen-home.png" alt="BMIPLUSのホーム画面。現在の体重、BMI、目標体重、標準体重、1週間の記録を表示">
+          </figure>
+
+          <figure class="phone-shot phone-shot-meal">
+            <img src="assets/screen-meals.png" alt="BMIPLUSの食事画面。今日の記録カロリーと朝食、昼食、夕食、間食の記録を表示">
+          </figure>
+
+          <img class="mascot hero-bimimaru" src="assets/bimimaru-normal.png" alt="びみまる" width="250" height="250">
+          <img class="mascot hero-pakumaru" src="assets/pakumaru-normal.png" alt="ぱくまる" width="240" height="240">
+        </div>
       </div>
     </section>
 
-    <section class="card">
-      <h2>ご案内</h2>
-      <ul>
-        <li><a href="privacy.html">プライバシーポリシー</a></li>
-        <li><a href="terms.html">利用規約</a></li>
-        <li><a href="https://pie-petunia-30d.notion.site/BMI-PLUS-2347172150ab800f893cc377e2bbcf1a">お問い合わせ</a></li>
-      </ul>
+    <section class="flow section" id="flow">
+      <div class="section-inner">
+        <div class="section-heading">
+          <h2>びみまると一緒に、毎日の流れ</h2>
+          <span aria-hidden="true"></span>
+        </div>
+        <div class="flow-grid">
+          <article class="flow-step">
+            <div class="step-title"><span>1</span><h3>記録する</h3></div>
+            <p class="step-lead">シンプルだから、続けられる。</p>
+            <div class="step-body">
+              <h4>からだと食事を、必要な分だけ</h4>
+              <ul>
+                <li>体重とBMIを記録</li>
+                <li>朝食・昼食・夕食・間食ごとに記録</li>
+                <li>夕食はざっくり入力にも対応</li>
+              </ul>
+              <img src="assets/bimimaru-normal.png" alt="記録を案内するびみまる">
+            </div>
+          </article>
+
+          <article class="flow-step">
+            <div class="step-title"><span>2</span><h3>夕食選びを手伝う</h3></div>
+            <p class="step-lead">毎日の「何にしよう」を、少し軽く。</p>
+            <div class="step-body next-body">
+              <h4>夕食が決まらないときに</h4>
+              <p>献立を考えるのが大変な日に、定番の夕食から3案を表示します。</p>
+              <h4>選び直しも、記録もかんたん</h4>
+              <p>ピンとこなければ別の3案へ。決めたメニューは、食べたあとに量とカロリーを記録できます。</p>
+              <img src="assets/pakumaru-normal.png" alt="食事を案内するぱくまる">
+            </div>
+          </article>
+
+          <article class="flow-step">
+            <div class="step-title"><span>3</span><h3>見返す</h3></div>
+            <p class="step-lead">記録した毎日を、あとから確認。</p>
+            <div class="step-body review-body">
+              <h4>今週のまとめと食事の履歴</h4>
+              <p>ホームの「今週のまとめ」で1週間の記録状況を確認。食事の記録履歴では、過去の朝食・昼食・夕食・間食を見返せます。</p>
+              <h4>体重・BMIの変化</h4>
+              <p>グラフを7日・30日・90日に切り替えて、変化の流れを確認できます。</p>
+              <div class="trend-summary">
+                <div><span>今週</span><b>記録状況を確認</b></div>
+                <div><span>履歴</span><b>食事を見返す</b></div>
+                <div><span>7・30・90日</span><b>体重・BMI</b></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <p class="note">BMIPLUSは、健康な成人が一般的な目安を確認するためのアプリです。診断・治療・個別の医療指導を提供するものではありません。</p>
+    <section class="features section" id="features">
+      <div class="section-inner">
+        <div class="section-heading compact"><h2>BMIPLUSで見えること</h2></div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>からだの状態</h3>
+            <p>WHO成人基準に基づくBMI分類を、診断ではなく一般的な目安として表示します。</p>
+            <div class="bmi-scale" aria-label="BMI分類の表示例">
+              <span><i class="scale-blue"></i>低体重 <b>18.5未満</b></span>
+              <span><i class="scale-green"></i>標準 <b>18.5〜24.9</b></span>
+              <span><i class="scale-orange"></i>過体重 <b>25.0〜29.9</b></span>
+              <span><i class="scale-coral"></i>肥満 <b>30.0以上</b></span>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <h3>目標と基準</h3>
+            <p>個人の目標体重と、BMI 22を基準にした標準体重の参考値を分けて表示します。</p>
+            <div class="weight-reference">
+              <span>目標体重 <strong>58.0<small> kg</small></strong></span>
+              <span>BMI 22の標準体重 <strong>62.0<small> kg</small></strong></span>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <h3>食事ごとの記録</h3>
+            <p>朝食・昼食・夕食・間食を分けて、食べたものとカロリーを確認できます。</p>
+            <div class="meal-slot-preview" aria-label="朝食、昼食、夕食、間食の記録例">
+              <div><b>朝食</b><span>記録済み</span><small>420 kcal</small></div>
+              <div><b>昼食</b><span>記録済み</span><small>700 kcal</small></div>
+              <div><b>夕食</b><span>未記録</span><small>追加する</small></div>
+              <div><b>間食</b><span>未記録</span><small>追加する</small></div>
+            </div>
+          </article>
+
+          <article class="feature-card trend-card">
+            <h3>変化の記録</h3>
+            <p>体重とBMIの推移を、7日・30日・90日で確認できます。</p>
+            <canvas id="trend-chart" width="560" height="260" role="img" aria-label="体重とBMIの推移を示すグラフの表示例"></canvas>
+            <div class="range-switch" aria-hidden="true"><span>7日</span><span>30日</span><b>90日</b></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="calculators section" id="calculators">
+      <div class="section-inner">
+        <div class="section-heading compact">
+          <h2>毎日に役立つ4つの計算ツール</h2>
+          <p>自分の記録とは別に、ご家族など自分以外の方の標準体重・BMI・必要エネルギー量・たんぱく質量の目安も、その場で確認できます。</p>
+        </div>
+        <div class="calculator-list">
+          <article><img src="assets/calculator-standard-weight.png" alt=""><h3>標準体重</h3><p>身長からBMI 22の標準体重を計算。</p></article>
+          <article><img src="assets/calculator-bmi.png" alt=""><h3>BMI</h3><p>身長と体重からBMIを計算。</p></article>
+          <article><img src="assets/calculator-energy.png" alt=""><h3>必要エネルギー量</h3><p>年齢・性別・活動レベルから参考値を計算。</p></article>
+          <article><img src="assets/calculator-protein.png" alt=""><h3>たんぱく質量</h3><p>体重や目的に応じた一般的な目安を計算。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="privacy section" id="privacy">
+      <div class="privacy-inner">
+        <img class="privacy-icon" src="assets/privacy-shield.png" alt="">
+        <div>
+          <h2>記録は、あなたの端末の中に。</h2>
+          <ul>
+            <li>アカウント登録は不要です。</li>
+            <li>体重・食事などの主要な記録は端末内に保存されます。</li>
+            <li>基本の記録機能は、通信環境に左右されず使用できます。</li>
+          </ul>
+        </div>
+        <img class="privacy-mascot" src="assets/bimimaru-resting.png" alt="落ち着いて座るびみまる">
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/app-icon.png" alt="" width="44" height="44">
+        <div><strong>BMIPLUS</strong><span>健康管理をサポートするアプリ</span></div>
+      </div>
+      <nav aria-label="法務・サポート">
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="terms.html">利用規約</a>
+        <a href="https://pie-petunia-30d.notion.site/BMI-PLUS-2347172150ab800f893cc377e2bbcf1a" target="_blank" rel="noopener">お問い合わせ</a>
+      </nav>
+    </div>
+    <p class="medical-note">BMIPLUSは、健康な成人が一般的な目安を確認するためのアプリです。診断・治療・個別の医療指導を提供するものではありません。</p>
+    <p class="copyright">© 2026 BMIPLUS</p>
+  </footer>
 </body>
 </html>

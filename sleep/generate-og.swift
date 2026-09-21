@@ -54,7 +54,7 @@ let purple = NSColor(calibratedRed: 0.36, green: 0.34, blue: 0.59, alpha: 1)
 let pink = NSColor(calibratedRed: 0.84, green: 0.29, blue: 0.53, alpha: 1)
 draw("ねむもこ  |  睡眠と体調管理", x: 72, y: 495, size: 25, color: purple)
 draw("眠る前から、", x: 68, y: 335, size: 72, color: purple, weight: .heavy)
-draw("起きたあとまで。", x: 68, y: 238, size: 72, color: pink, weight: .heavy)
+draw("起きたあとまで", x: 68, y: 238, size: 72, color: pink, weight: .heavy)
 draw("眠りと毎日の調子を、やさしく記録。", x: 72, y: 156, size: 26, color: purple)
 draw("カレンダー・グラフ・分析・直近7日の振り返り", x: 72, y: 109, size: 19, color: purple, weight: .medium)
 

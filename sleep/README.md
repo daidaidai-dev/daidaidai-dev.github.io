@@ -22,6 +22,7 @@ App Store審査、SNS、ユーザー向け説明に使用する静的サイト�
 - `assets/artboards/`: `submission-artboards-2026-09-19` からWeb向けに軽量化したiPhone / iPad紹介画像
 
 Web用画像は `AppStoreScreenshots/submission-artboards-2026-09-19/exports/` の完成画像から作成します。原本と生成スクリプトは変更しません。
+OG画像は `swift docs/generate-og.swift docs/assets/brand/og.jpg docs/assets/artboards/01-nemuru-mae-kara-iphone.jpg` で再生成できます。
 
 ## 公開前の確認
 

@@ -13,15 +13,15 @@ App Store審査、SNS、ユーザー向け説明に使用する静的サイト�
 
 ## 構成
 
-- `index.html`: アプリ紹介、機能、競合との違い、スクリーンショット、プライバシー、FAQ
+- `index.html`: 現行の睡眠記録フロー、7枚のアートボード、分析、直近7日の振り返り、プライバシー
 - `support/index.html`: お問い合わせとよくある質問
 - `privacy/index.html`: 保存データ、広告、祝日API、削除、医療上の位置づけ
-- `styles.css`: 共通テーマ、レスポンシブ、ダークモード
-- `site.js`: テーマ、モバイルメニュー、iPhone / iPad画像切替、表示アニメーション
+- `marketing.css` / `marketing.js`: ホーム専用のレスポンシブ表示とiPhone / iPad画像切替
+- `styles.css` / `site.js`: サポート・プライバシーページ用の既存スタイルと動作
 - `assets/brand/`: アプリアイコン、ねむもこ、ヒーロー、OG画像
-- `assets/screenshots/`: Web表示用に軽量化したiPhone / iPad紹介画像
+- `assets/artboards/`: `submission-artboards-2026-09-19` からWeb向けに軽量化したiPhone / iPad紹介画像
 
-Web用画像は `AppStoreScreenshots/reference-style-v2/` の完成画像から作成します。原本と生成スクリプトは変更しません。
+Web用画像は `AppStoreScreenshots/submission-artboards-2026-09-19/exports/` の完成画像から作成します。原本と生成スクリプトは変更しません。
 
 ## 公開前の確認
 

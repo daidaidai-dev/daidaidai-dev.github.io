@@ -135,7 +135,7 @@
         if (navigator.share)
           await navigator.share({
             title: "酸素ボンベ残量ナビ",
-            text: "酸素の残り時間を、わかりやすく。",
+            text: "酸素の残り時間を、わかりやすく",
             url,
           });
         else {

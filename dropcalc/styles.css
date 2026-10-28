@@ -785,6 +785,11 @@ a {
     var(--bg);
 }
 
+.guide-title-part {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 .guide-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

@@ -1589,6 +1589,10 @@ a {
     font-size: 38px;
   }
 
+  #guides-title {
+    font-size: clamp(32px, 10vw, 38px);
+  }
+
   .feature-list li {
     grid-template-columns: 50px 1fr;
     gap: 14px;
